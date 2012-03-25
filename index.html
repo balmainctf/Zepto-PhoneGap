@@ -2,9 +2,14 @@
 <html>
 <head>
 <link rel="stylesheet" href="assets/css/master.css" type="text/css" media="screen" />
-<script src="assets/js/zepto.min.js" type="text/javascript" charset="utf-8" />
+<script src="assets/js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-$('#intro').swipe(function() {$('#intro ul').append('<li>swiped</li>');});
+$(
+function() {
+	$('#intro ul').append('<li>loaded</li>');
+	$('#intro').swipe(function() {$('#intro ul').append('<li>swiped</li>');});
+}
+)
 </script>
 </head>
 <body>

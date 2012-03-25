@@ -2,11 +2,17 @@
 <html>
 <head>
 <link rel="stylesheet" href="assets/css/master.css" type="text/css" media="screen" />
+<script src="assets/js/zepto.min.js" type="text/javascript" charset="utf-8" />
+<script type="text/javascript">
+$('#intro').swipe(function() {$('#intro ul').append('<li>swiped</li>');});
+</script>
 </head>
 <body>
 <div id="title_bar">Zepto.js with Phone<strong>Gap</strong><div>
 <div id="intro" class="view">
 <p>Jos&eacute; J. Cap&oacute;</p>
+<ul>
+</ul>
 </div>
 </body>
 </html>

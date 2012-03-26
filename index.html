@@ -1,23 +1,26 @@
 <!doctype html>
 <html>
 <head>
+  <title>Zepto PhoneGap</title>
 <link rel="stylesheet" href="assets/css/master.css" type="text/css" media="screen" />
 <script src="assets/js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
+<![CDATA[
 $(
 function() {
 	$('#intro ul').append('<li>loaded</li>');
 	$('#intro').swipe(function() {$('#intro ul').append('<li>swiped</li>');});
+	$('#intro').swipeRight(function() {$('#intro ul').append('<li>right</li>');});
 }
 )
+]]>
 </script>
 </head>
 <body>
-<div id="title_bar">Zepto.js with Phone<strong>Gap</strong><div>
+<div id="title_bar">Zepto.js with Phone<strong>Gap</strong></div>
 <div id="intro" class="view">
 <p>Jos&eacute; J. Cap&oacute;</p>
-<ul>
-</ul>
+<ul></ul>
 </div>
 </body>
 </html>

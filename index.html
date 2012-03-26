@@ -14,7 +14,8 @@ function() {
 	$('body').swipeLeft(function() {$('#intro ul').append('<li>left</li>');});
 	$('body').swipeUp(function() {$('#intro ul').append('<li>up</li>');});
 	$('body').tap(function() {$('#intro ul').append('<li>tap</li>');});
-	$('body').tapLong(function() {$('#intro ul li').remove();});
+	$('body').doubleTap(function() {$('#intro ul').append('<li>double tap</li>');});
+	$('body').longTap(function() {$('#intro ul li').remove();});
 }
 )
 </script>

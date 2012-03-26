@@ -8,8 +8,13 @@
 $(
 function() {
 	$('#intro ul').append('<li>loaded</li>');
-	$('#intro').swipe(function() {$('#intro ul').append('<li>swiped</li>');});
-	$('#intro').swipeRight(function() {$('#intro ul').append('<li>right</li>');});
+	$('#intro ul').append('<li>loaded</li>');
+	$('#intro ul').append('<li>loaded</li>');
+	$('body').swipeRight(function() {$('#intro ul').append('<li>right</li>');});
+	$('body').swipeLeft(function() {$('#intro ul').append('<li>left</li>');});
+	$('body').swipeUp(function() {$('#intro ul').append('<li>up</li>');});
+	$('body').tap(function() {$('#intro ul').append('<li>tap</li>');});
+	$('body').tapLong(function() {$('#intro ul li').remove();});
 }
 )
 </script>
